@@ -1,0 +1,16 @@
+/**
+ * Page Full Width
+ */
+
+@import "compass";
+@import "../config";
+@import "../lib/mm.breakpoints";
+@import "../lib/mixins";
+
+
+.page-full-width{
+  width: 100%;
+  padding: $spacing;
+  background: $brand-primary;
+  @include clearfix;
+}

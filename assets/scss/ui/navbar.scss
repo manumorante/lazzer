@@ -1,0 +1,94 @@
+/**
+ * Header
+ */
+
+@import "compass";
+@import "../config";
+@import "../lib/mm.breakpoints";
+@import "../lib/mixins";
+
+
+.navbar-header{
+  text-align: center;
+
+  @include at-small{
+    text-align: left;
+  }
+}
+
+.navbar-default{
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 25px;
+
+  .navbar-collapse{
+    border: 0;
+  }
+}
+
+.navbar-brand{
+  @include inline-block;
+  width: 176px;
+  height: 91px;
+  margin-top: 25px;
+  float: none;
+
+  background: transparent image-url('lazzer.png');
+  @include background-size(100%);
+  @include hide-text;
+}
+
+
+.navbar-default{
+  .navbar-nav{
+    float: right;
+    width: 100%;
+    margin-top: 58px;
+    color: $brand-primary;
+    background-color: $brand-secondary;
+
+    @include at-small{
+      width: 504px;
+    }
+    @include at-medium{
+      width: 678px;
+    }
+
+    > li{
+      width: 100%;
+
+      @include at-small{
+        width: 16.666666667%;
+      }
+
+      > a{
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @include transition(all .4s);
+
+        @include at-small{
+          width: auto;
+        }
+      }
+      > a:hover,
+      > a:focus{
+        color: $brand-secondary;
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+
+.page-id-6  .navbar-nav > .lazzer,
+.page-id-8  .navbar-nav > .actividad,
+.page-id-10 .navbar-nav > .servicios,
+.page-id-22 .navbar-nav > .localizacion,
+.page-id-27 .navbar-nav > .trabajos,
+.page-id-12 .navbar-nav > .contacto{
+  > a{
+    color: $brand-secondary;
+    background-color: $brand-primary;
+  }
+}

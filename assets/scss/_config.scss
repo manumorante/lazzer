@@ -1,0 +1,75 @@
+// #######
+// Config
+// #######
+
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$brand-primary:         #3a4342;
+$brand-secondary:       #94e9da;
+$brand-gray-1:          #cccccc;
+
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  'Istok Web', sans-serif;
+$font-size-base:    14px;
+
+$line-height-base:        1.428571429;
+$line-height-computed:    floor(($font-size-base * $line-height-base));
+
+
+$giga-size:         96px;
+$mega-size:         72px;
+$kilo-size:         48px;
+
+$font-size-h1:      36px; // .alpha
+$font-size-h2:      30px; // .beta
+$font-size-h3:      24px; // .gamma
+$font-size-h4:      20px; // .delta
+$font-size-h5:      18px; // .epsilon
+$font-size-h6:      16px; // .zeta
+
+$font-size-milli:   12px;
+$font-size-micro:   10px;
+
+$font-size-large:   $font-size-h4;
+$font-size-small:   $font-size-milli;
+
+
+
+//== Spacing
+//
+//## https://github.com/inuitcss/settings.defaults/blob/master/_settings.defaults.scss
+$spacing:           $line-height-computed;
+$spacing--small:    round($spacing / 2);
+$spacing--large:    round($spacing * 2);
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:              480px;
+
+// Small screen / tablet
+$screen-sm-min:              768px;
+
+// Medium screen / desktop
+$screen-md-min:              992px;
+
+// Large screen / wide desktop
+$screen-lg-min:              1200px;

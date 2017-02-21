@@ -1,0 +1,124 @@
+/**
+ * Layout
+ */
+
+@import "compass";
+@import "../config";
+@import "../lib/mm.breakpoints";
+@import "../lib/mixins";
+
+
+*,
+*:after,
+*::before {
+  @include optimize-legibility;
+}
+
+/**
+ * Main wrapper
+ */
+
+.main-wrapper{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: $spacing;
+  min-height: 500px;
+}
+
+
+
+/**
+ * Slogan
+ */
+
+.slogan{
+  h2{
+    margin: 0;
+    color: $brand-secondary;
+  }
+  p{
+    color: #fff;
+  }
+}
+
+
+
+/**
+ * Triforce
+ */
+
+.triforce{
+  position: relative;
+  z-index: 2;
+  @include inline-block;
+  width: 100%;
+  height: 525px;
+  padding: $spacing;
+  background-color: $brand-primary;
+
+  color: $brand-gray-1;
+
+  a,
+  a:hover{
+    color: $brand-gray-1;
+  }
+
+  @include at-small{
+    width: auto;
+    padding-right: 250px;
+    background: transparent image-url('triangle.png') top right no-repeat;
+  }
+}
+
+
+
+/**
+ * Content
+ */
+.content{
+  width: 100%;
+
+  @include at-small{
+    width: 300px;
+  }
+
+  @include at-large{
+    width: 400px;
+  }
+}
+
+/**
+   * Main title
+   */
+h1{
+  font-size: $font-size-h4;
+  text-transform: uppercase;
+  color: $brand-secondary;
+}
+
+
+/**
+ * Aside
+ */
+.aside{
+  width: 100%;
+
+  img{
+    float: right;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include at-small{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    img{
+      width: auto;
+    }
+  }
+
+
+}

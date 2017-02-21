@@ -1,0 +1,66 @@
+/**
+ * Footer
+ */
+
+@import "compass";
+@import "../config";
+@import "../lib/mm.breakpoints";
+@import "../lib/mixins";
+
+
+.main-footer{
+  .social{
+    @include inline-block;
+    margin-right: $spacing;
+
+    li{
+      @include inline-block;
+
+      a{
+        font-size: 25px;
+        color: darken($brand-secondary, 10%);
+        @include transition(color .5s);
+
+        &:hover{
+          color: darken($brand-secondary, 35%);
+        }
+      }
+    }
+  }
+
+  .legal{
+    @include inline-block;
+    font-size: $font-size-milli;
+  }
+
+  .contact{
+    width: 100%;
+    text-align: center;
+
+    @include at-small{
+      text-align: right;
+    }
+
+    // Email
+    .email{
+      .fa{
+        color: $brand-secondary;
+      }
+    }
+
+    // Phone
+    .phone{
+      font-size: $font-size-h4;
+      font-weight: 700;
+
+      strong{
+        color: $brand-secondary;
+      }
+    }
+
+    // Adress
+    .adress{
+      font-size: $font-size-milli;
+    }
+  }
+}

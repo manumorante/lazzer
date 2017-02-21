@@ -1,0 +1,20 @@
+/**
+ * Forms
+ */
+
+@import "compass";
+@import "../config";
+@import "../lib/mm.breakpoints";
+@import "../lib/mixins";
+
+
+.wpcf7-form .wpcf7-form-control-wrap{
+  input{
+    width: 100%;
+  }
+}
+
+input,
+textarea{
+  color: black;
+}
