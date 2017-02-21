@@ -7,12 +7,6 @@
 @import "../lib/mm.breakpoints";
 @import "../lib/mixins";
 
-
-body {
-  /* On modern browsers, prevent the whole page to bounce */
-  overflow: hidden;
-}
-
 .iscroll {
   position: relative;
   width: 100%;
