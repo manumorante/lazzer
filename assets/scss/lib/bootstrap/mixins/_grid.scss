@@ -6,15 +6,23 @@
 @mixin container-fixed($gutter: $grid-gutter-width) {
   margin-right: auto;
   margin-left: auto;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
+
+  // Avoid gutter in mobile
+  @media (min-width: $screen-sm-min) {
+    padding-left:  ($gutter / 2);
+    padding-right: ($gutter / 2);
+  }
+
   @include clearfix;
 }
 
 // Creates a wrapper for a series of columns
 @mixin make-row($gutter: $grid-gutter-width) {
-  margin-left:  ($gutter / -2);
-  margin-right: ($gutter / -2);
+  // Avoid gutter in mobile
+  @media (min-width: $screen-sm-min) {
+    margin-left:  ($gutter / -2);
+    margin-right: ($gutter / -2);
+  }
   @include clearfix;
 }
 

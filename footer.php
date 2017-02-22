@@ -14,7 +14,7 @@
               </ul>
 
               <p class="legal">
-                © 2015 <strong>Lazzer</strong> | Todos los derechos reservados | <a href="#">Aviso legal</a>
+                © 2017 <strong>Lazzer</strong> | Todos los derechos reservados
               </p>
             </div>
 
@@ -30,9 +30,13 @@
         </div>
       </footer>
 
-      <script type="text/javascript">
-        new IScroll('.iscroll', { mouseWheel: true, scrollbars: true, interactiveScrollbars: true });
-      </script>
+<script type="text/javascript">
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+// mobile
+} else {
+new IScroll('.iscroll', { mouseWheel: true, scrollbars: true, interactiveScrollbars: true });
+}
+</script>
 
 		<?php wp_footer(); ?>
 
