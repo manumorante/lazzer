@@ -22,7 +22,7 @@
               <div class="contact">
                 <div class="email"><i class="fa fa-envelope-o"></i> info@lazzer.es</div>
                 <div class="phone">605 654 812</div>
-                <div class="adress">C/ Primero de Mayo bajo 1<br>18140 La Zubia (Granada)<br>RAZÓN en Tiendas PI</div>
+                <div class="adress">C/ Calvario 27, bajo<br>18140 La Zubia (Granada)</div>
               </div>
             </div>
           </div>
